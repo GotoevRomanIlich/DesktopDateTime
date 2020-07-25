@@ -8,7 +8,7 @@ namespace DesktopDateTime
 {
     public partial class MainForm : Form
     {
-        private readonly string VERSION = "ver. 1.2.1";        
+        private readonly string VERSION = "ver. 1.2.2";        
 
         DateTime dateTime = new DateTime();
 
@@ -85,6 +85,12 @@ namespace DesktopDateTime
                 lblTime.Font = new Font(familyName: "Arial Rounded MT Bold", 18, FontStyle.Regular);                
             }            
             pfc.Dispose();
+        }
+
+        private void ChangeOnTop(object sender, EventArgs e)
+        {
+            if (chbOnTop.Checked == true) this.TopMost = true;
+                else this.TopMost = false;            
         }
     }
 }

@@ -37,6 +37,7 @@
             this.btnFormColor = new System.Windows.Forms.Button();
             this.btnFontColor = new System.Windows.Forms.Button();
             this.lblDay = new System.Windows.Forms.Label();
+            this.chbOnTop = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblTime
@@ -102,6 +103,19 @@
             this.lblDay.TabIndex = 4;
             this.lblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // chbOnTop
+            // 
+            this.chbOnTop.AutoSize = true;
+            this.chbOnTop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbOnTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.chbOnTop.Location = new System.Drawing.Point(102, 103);
+            this.chbOnTop.Name = "chbOnTop";
+            this.chbOnTop.Size = new System.Drawing.Size(103, 17);
+            this.chbOnTop.TabIndex = 5;
+            this.chbOnTop.Text = "OnTop ON/OFF";
+            this.chbOnTop.UseVisualStyleBackColor = true;
+            this.chbOnTop.CheckStateChanged += new System.EventHandler(this.ChangeOnTop);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +123,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(304, 125);
+            this.Controls.Add(this.chbOnTop);
             this.Controls.Add(this.lblDay);
             this.Controls.Add(this.btnFontColor);
             this.Controls.Add(this.btnFormColor);
@@ -123,6 +138,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,6 +151,7 @@
         private System.Windows.Forms.Button btnFormColor;
         private System.Windows.Forms.Button btnFontColor;
         private System.Windows.Forms.Label lblDay;
+        private System.Windows.Forms.CheckBox chbOnTop;
     }
 }
 
