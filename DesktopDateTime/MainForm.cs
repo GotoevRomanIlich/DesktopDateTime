@@ -8,7 +8,7 @@ namespace DesktopDateTime
 {
     public partial class MainForm : Form
     {
-        private readonly string VERSION = "ver. 1.2.2";        
+        private readonly string VERSION = "ver. 1.2.3";        
 
         DateTime dateTime = new DateTime();
 
@@ -24,6 +24,7 @@ namespace DesktopDateTime
             lblTime.BackColor = Color.Transparent;            
             lblDate.BackColor = Color.Transparent;
             lblDay.BackColor = Color.Transparent;
+            chbOnTop.BackColor = Color.Transparent;            
             FocusOnLabel();
 
             colorDialogForm.FullOpen = true;
@@ -69,6 +70,7 @@ namespace DesktopDateTime
             lblDay.ForeColor = colorDialogForm.Color;
             btnFontColor.ForeColor = colorDialogForm.Color;
             btnFormColor.ForeColor = colorDialogForm.Color;
+            chbOnTop.ForeColor = colorDialogForm.Color;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
