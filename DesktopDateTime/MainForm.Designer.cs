@@ -105,14 +105,13 @@
             // 
             // chbOnTop
             // 
-            this.chbOnTop.AutoSize = true;
             this.chbOnTop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chbOnTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.chbOnTop.Location = new System.Drawing.Point(102, 103);
+            this.chbOnTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.chbOnTop.Location = new System.Drawing.Point(109, 103);
             this.chbOnTop.Name = "chbOnTop";
-            this.chbOnTop.Size = new System.Drawing.Size(103, 17);
+            this.chbOnTop.Size = new System.Drawing.Size(90, 19);
             this.chbOnTop.TabIndex = 5;
-            this.chbOnTop.Text = "OnTop ON/OFF";
+            this.chbOnTop.Text = "Поверх окон";
             this.chbOnTop.UseVisualStyleBackColor = true;
             this.chbOnTop.CheckStateChanged += new System.EventHandler(this.ChangeOnTop);
             // 
@@ -138,7 +137,6 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

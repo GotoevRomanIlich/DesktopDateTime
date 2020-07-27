@@ -8,7 +8,7 @@ namespace DesktopDateTime
 {
     public partial class MainForm : Form
     {
-        private readonly string VERSION = "ver. 1.2.3";        
+        private readonly string VERSION = "ver. 1.2.4";        
 
         DateTime dateTime = new DateTime();
 
